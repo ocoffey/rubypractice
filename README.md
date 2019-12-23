@@ -7,7 +7,11 @@ Made with 2 main classes:
 1. KDTree
 2. KDNode
 
+---
+
 ### KDTree
+
+---
 
 k-Dimensional Binary Search Tree
 
@@ -23,7 +27,11 @@ k-Dimensional Binary Search Tree
 * Has a variable for the number of dimensions
 * Could have a variable for the amount of nodes?
 
+---
+
 ### KDNode
+
+---
 
 k-Dimensional Node
 
@@ -33,6 +41,8 @@ k-Dimensional Node
 * Pointers? to Left and Right KDNodes
   * See if Ruby uses null pointers or otherwise
 
+---
+
 ## Hash Table
 
 Three subclasses:
@@ -41,7 +51,11 @@ Three subclasses:
 2. LL (Linked List)
 3. LLNode
 
+---
+
 ### HashTable
+
+---
 
 #### Hash Table Public Methods
 
@@ -54,7 +68,11 @@ Three subclasses:
 * array-like, where each index is a linked list
 * Integer size of hash table
 
+---
+
 ### L(inked) L(ist)
+
+---
 
 #### LL Methods
 
@@ -65,7 +83,11 @@ Three subclasses:
 
 * Head (First Node)
 
+---
+
 ### Linked List Node
+
+---
 
 #### LL Node Data
 
