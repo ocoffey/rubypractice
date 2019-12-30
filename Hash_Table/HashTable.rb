@@ -5,7 +5,7 @@ class HashTable < LinkedList
     # needs to be above 0 in size
     def initialize(size = 0)
         if size <= 0
-            puts "Please enter a non-zero size"
+            raise RangeError.new "Please enter a non-zero size"
         else
             @size = size
             # makes each index in the table its own linked list
