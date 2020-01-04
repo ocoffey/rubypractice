@@ -41,7 +41,7 @@ class HashTable < LinkedList
     # uses the linked list lookup method
     def lookup(word)
         if @size <= 0
-            puts "Cannot Insert, Invalid Size"
+            puts "Cannot Lookup, Invalid Size"
         else
             index = make_hash(word)
             @table[index].lookup_word(word)

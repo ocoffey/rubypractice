@@ -50,18 +50,25 @@ class LinkedList < LLNode
             # if only one element, compare and return
             return (@current.data == word) if not @current.next
             # traverse as long as valid, comparing along the way
-            while (@current = @current.next)
+            # a do-while is used because we want to compare 'current'
+            # at head before updating it
+            loop do
                 return true if (@current.data == word)
+                if not (@current = @current.next)
+                    break
+                end
             end
+
             # implicit return for the word not being found
             false
         end
     end
 
-    private
-        # helper methods for easy moving
-        # sets current to 'head'
-        def go_head
-            @current = @head
-        end
+    # helper methods for easy moving
+    # sets current to 'head'
+    def go_head
+        @current = @head
+    end
+
+    private :go_head
 end
