@@ -43,7 +43,7 @@ class TestHashTable < Test::Unit::TestCase
         end
 
         # test for lookups working
-        #begin
+        begin
             for letter in letters do
                 # test for 'words' that should be in the table
                 if not myTable.lookup('h'+letter)
@@ -54,9 +54,9 @@ class TestHashTable < Test::Unit::TestCase
                     raise "element in table when it shouldn't be"
                 end
             end
-        #rescue Exception
-        #    raise "Lookup Had The Issues"
-        #end
+        rescue Exception
+            raise "Lookup Had The Issues"
+        end
     end
 
     def test_hash
