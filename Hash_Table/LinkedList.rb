@@ -47,8 +47,6 @@ class LinkedList < LLNode
         else
             # if nonempty, set current to the head
             go_head
-            # if only one element, compare and return
-            return (@current.data == word) if not @current.next
             # traverse as long as valid, comparing along the way
             # a do-while is used because we want to compare 'current'
             # at head before updating it
