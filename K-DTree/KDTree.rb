@@ -1,12 +1,17 @@
 # Node class for the KD-Tree
 class KDNode
-    # takes an array of dimensional data,
-    # the depth of the node,
-    # and possible data for the node (for k-nn)
-    # left and right children set to nil
-    # also keeps track of the number of children
-    # for nearest neighbor searches
-    # and the parent node, for ease of traversal
+    # permission definitions for the variables
+    attr_accessor :left, :right, :parent, :num_children
+    attr_reader :data, :depth, :dimensions
+=begin
+    takes an array of dimensional data,
+    the depth of the node,
+    and possible data for the node (for k-nn)
+    left and right children set to nil;
+    also keeps track of the number of children
+    for nearest neighbor searches
+    and the parent node, for ease of traversal
+=end
     def initialize(dimensions, depth, data, parent = nil)
         @dimensions = dimensions
         @depth = depth
@@ -33,6 +38,7 @@ class KDNode
     end
 end
 
+# inherits KDNode
 class KDTree < KDNode
     # no nodes in the tree
     # empty root
